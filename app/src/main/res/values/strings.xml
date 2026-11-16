@@ -1,4 +1,6 @@
 <resources>
+    <string name="computer_address_hint">填写你电脑的 Tailscale 地址</string>
+    <string name="computer_not_configured">尚未配置电脑连接</string>
     <string name="web_key_required">请填写 DeepSeek Key，或先保存 DeepSeek 对话的密钥。</string>
     <string name="web_key_cleared">专用密钥已清除；如已配置官方 DeepSeek 对话密钥，将复用该密钥。</string>
     <string name="model_selector_label">%1$s  ⌄</string>

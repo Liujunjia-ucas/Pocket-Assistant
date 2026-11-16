@@ -8,14 +8,19 @@
       "sha256": "1379c47a0e908ba1cf8befe05f9286cc048d8663d50bc0a5dfc376e984975c5e"
     },
     {
+      "path": ".gitattributes",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
       "path": ".gitignore",
       "bytes": 244,
       "sha256": "6ff8f1801a1342564b587679ee4b66162c1d7488d03de633fb87805bcfbd8f17"
     },
     {
       "path": "app/build.gradle",
-      "bytes": 1454,
-      "sha256": "a658c31e826aca5c317b9173f2a0f4f4363f71abebd71dd81caba1ca1a2829bd"
+      "bytes": 1457,
+      "sha256": "8da2f9300f9e445f6c1d1d7af597b60342a0fd31d8b15e76a95885326b0712fe"
     },
     {
       "path": "app/src/main/AndroidManifest.xml",
@@ -279,8 +284,8 @@
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/AssistantWork.java",
-      "bytes": 1901,
-      "sha256": "0b113488d96926a39dc544d87e373091067c6319db6b4ec81e1a0d2811bb70ed"
+      "bytes": 1934,
+      "sha256": "8ebe782477a9919065bdfdebcaa21f2e5927f7567e580a929898ed992543664f"
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/AssistantWorkStore.java",
@@ -299,8 +304,8 @@
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/BridgeEndpoint.java",
-      "bytes": 1543,
-      "sha256": "3c4a653b3685dcba5bca3916af60c4691af7e7834ed75fac7410c29eed8ee32f"
+      "bytes": 1810,
+      "sha256": "1aaf128538a1c0e22cc14f9cd6961d35000c093a83ed4759cc9ba77bd5907bfa"
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/CallHistory.java",
@@ -429,8 +434,8 @@
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/MainActivity.java",
-      "bytes": 92886,
-      "sha256": "d72767efe2d947255e1979052a889a10e06d675ee3646ca3eae4a388796c90d5"
+      "bytes": 93885,
+      "sha256": "d08b1192449532dca114c0ad4bc8cc3ad82b6fa50db58f323e3cdbcd510f48e0"
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/MathReplyView.java",
@@ -644,8 +649,8 @@
     },
     {
       "path": "app/src/main/res/values/strings.xml",
-      "bytes": 1835,
-      "sha256": "4662e88f12c88e5e5ad58747383b9a82601ac47d66521ad6f8529b3f58a7302e"
+      "bytes": 1998,
+      "sha256": "d03e9685b42ecaa063a541c146799ead32e52071e4f1a503b8e33cb76f72cc05"
     },
     {
       "path": "app/src/main/res/values/styles.xml",
@@ -694,13 +699,13 @@
     },
     {
       "path": "docs/verification.json",
-      "bytes": 2000,
-      "sha256": "3b4eebb2485e2049c5faefb0bf15c4d8aa8044dca8b448f16c040116d903d857"
+      "bytes": 2003,
+      "sha256": "63071d1cab8efecad23acf8bf4358a5649ded8c4601d3b5185ddf1fdc74027d9"
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 4390,
-      "sha256": "758832a304465283666e72db9163a91231828107df0e44bff69bd3e29379d411"
+      "bytes": 5073,
+      "sha256": "0fc820f3d21e24ac1535f503eab8204b2b0cf7063065e12199c2b855becda9da"
     },
     {
       "path": "gradle.properties",
@@ -724,8 +729,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8047,
-      "sha256": "09ba2c7c886fb5c32a13244cd138265b9d701712086b22228c8d407c445191eb"
+      "bytes": 8366,
+      "sha256": "315ce0a11d20a66e4e34b11be582d2065627efac6457eead042d6ddcef06eb0a"
     },
     {
       "path": "RISK-NOTICE.md",
@@ -824,8 +829,8 @@
     },
     {
       "path": "test/java/com/codexpocket/app/BridgeEndpointTest.java",
-      "bytes": 876,
-      "sha256": "cb9aeb7b0df7eb0521c43e6e7009b7aa3e0351373e5e09e33e68bf341abbed90"
+      "bytes": 1480,
+      "sha256": "3c2ddca4955f168fad91b0c896368796cbf09ac079c0e03e36992f6bc5c5ac42"
     },
     {
       "path": "test/java/com/codexpocket/app/DirectApiTest.java",
@@ -914,8 +919,8 @@
     },
     {
       "path": "tools/audit-publication.py",
-      "bytes": 7142,
-      "sha256": "30d1c8000854357c063b1220d5802b6bc455740f2c25eb994822050dd5b57504"
+      "bytes": 7361,
+      "sha256": "a46afab80396f571fb2328a91443f5def5ce156a97d30692e8dcb4b419c3fc1a"
     },
     {
       "path": "tools/clash-proxy.ps1",

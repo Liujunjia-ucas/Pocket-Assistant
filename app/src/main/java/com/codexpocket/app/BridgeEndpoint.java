@@ -2,6 +2,10 @@ package com.codexpocket.app;
 import java.net.URI;
 /** Restrict bearer-token HTTP to literal loopback or Tailscale CGNAT addresses. */
 final class BridgeEndpoint {
+    static boolean configured(String address,String token){
+        if(address==null||address.trim().isEmpty()||token==null||token.trim().length()<32)return false;
+        try{normalize(address);return true;}catch(IllegalArgumentException e){return false;}
+    }
     static String normalize(String value){
         try{
             URI uri=new URI(value.trim());String host=uri.getHost();

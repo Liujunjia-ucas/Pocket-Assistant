@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = "PUBLICATION-MANIFEST.json"
 IGNORED = {".git", ".gradle", ".idea", ".vscode", "build", "state", "workspace", "dist", "artifacts", "node_modules", "__pycache__"}
 ROOT_FILES = {
-    ".gitignore", ".env.example", "LICENSE", "README.md", "PRIVACY.md", "SECURITY.md", "RISK-NOTICE.md", "THIRD-PARTY-NOTICES.md", "CONTRIBUTING.md",
+    ".gitignore", ".gitattributes", ".env.example", "LICENSE", "README.md", "PRIVACY.md", "SECURITY.md", "RISK-NOTICE.md", "THIRD-PARTY-NOTICES.md", "CONTRIBUTING.md",
     "package.json", "build.gradle", "settings.gradle", "gradle.properties", "build-android.ps1", "start-server.cmd", "app/build.gradle", "app/src/main/AndroidManifest.xml", MANIFEST,
 }
 PREFIXES = {
@@ -90,7 +90,7 @@ def audit(write=False):
         "app/build.gradle": ["applicationId 'org.pocketassistant.community'", "debuggable false", "jniDebuggable false"],
         "app/src/main/AndroidManifest.xml": ['android:allowBackup="false"', 'android:dataExtractionRules="@xml/data_extraction_rules"', '.CommunityApplication'],
         "app/src/main/java/com/codexpocket/app/CommunityApplication.java": ['setWebContentsDebuggingEnabled(false)'],
-        "app/src/main/java/com/codexpocket/app/MainActivity.java": ["FLAG_SECURE"],
+        'app/src/main/java/com/codexpocket/app/MainActivity.java': ["FLAG_SECURE", 'prefs.getString("base", "")', "BridgeEndpoint.configured(base,token)"],
         "app/src/main/java/com/codexpocket/app/RoundedDialogBuilder.java": ["FLAG_SECURE"],
         "app/src/main/java/com/codexpocket/app/RemoteFiles.java": ["FLAG_SECURE"],
         "app/src/main/java/com/codexpocket/app/AssistantSync.java": ['getBoolean("auto_sync",false)', 'getBoolean("ai_triage",false)'],

@@ -1,8 +1,12 @@
 # 验证记录
 
-验证日期：2026-11-16。对象：Pocket Assistant Community 1.0.0；应用 ID 为 `org.pocketassistant.community`。机器可读摘要见 [verification.json](verification.json)。
+验证日期：2026-11-16。对象：Pocket Assistant Community 1.0.0 r3（Android 版本 `1.0.0-community-r3`，versionCode 2）；应用 ID 为 `org.pocketassistant.community`。机器可读摘要见 [verification.json](verification.json)。
 
 ## 构建与回归
+
+r3 将手机首次配对地址默认值改为空白，保存按钮随地址与令牌格式更新；启动、手动重连、代理控制、文件恢复和后台任务检查有效配对后才构造电脑客户端。手动保存过的地址（包括明确填写的本地调试地址）继续保留。本轮补充了空地址、缺少令牌、无效地址与明确保存地址的回归检查；没有在本次运行手机安装/界面自动化测试。
+
+Node 桥接代码及其测试未在 r3 修改，下表 Node 结果来自上一轮同一代码的验证；Android 构建/Lint 和 17 组 JVM 程序针对 r3 重新运行。
 
 | 检查 | 结果与范围 |
 |---|---|

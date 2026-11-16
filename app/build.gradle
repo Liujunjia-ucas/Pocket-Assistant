@@ -7,8 +7,8 @@ android {
         applicationId 'org.pocketassistant.community'
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName '1.0.0-community'
+        versionCode 2
+        versionName '1.0.0-community-r3'
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17

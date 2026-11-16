@@ -3,7 +3,7 @@
   "date": "2026-11-16",
   "android": {
     "applicationId": "org.pocketassistant.community",
-    "version": "1.0.0-community",
+    "version": "1.0.0-community-r3",
     "releaseBuild": "passed",
     "lintErrors": 0,
     "lintWarnings": 18,

@@ -145,14 +145,14 @@ public class MainActivity extends Activity {
         getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_SECURE);
         remoteFiles = new RemoteFiles(this, palette);
         getWindow().setStatusBarColor(BG);getWindow().setNavigationBarColor(BG);
-        base = prefs.getString("base", "http://127.0.0.1:8787");
+        base = prefs.getString("base", "");
         threadId = prefs.getString("threadId", "");
         model = prefs.getString("model", "deepseek-flash"); modelLabel = labelFor(model);
         if (modelLabel.isEmpty()) { model = "deepseek-flash"; modelLabel = labelFor(model); }
         pendingId = prefs.getString("pendingId", ""); pendingText = prefs.getString("pendingText", ""); pendingThread = prefs.getString("pendingThread", "");
         pendingFingerprint=prefs.getString("pendingFingerprint",pendingText+"|");
         try { token = SecretStore.load(this); } catch (Exception e) { connectionError = "配对信息无法解密，请重新填写令牌"; }
-        remoteFiles.restoreState(state,new Api(base,token));
+        if(BridgeEndpoint.configured(base,token))remoteFiles.restoreState(state,new Api(base,token));
         try{AssistantWork.store(this).recoverAndroid();}catch(Exception ignored){}AssistantNotifications.channels(this);
         buildUi();
         composer.setText(prefs.getString("draft", ""));ui.post(()->handleAssistantIntent(getIntent()));
@@ -169,7 +169,7 @@ public class MainActivity extends Activity {
             int flags=android.os.Build.VERSION.SDK_INT>=33?Context.RECEIVER_NOT_EXPORTED:0;
             registerReceiver(assistantChanges,filter,getPackageName()+".permission.APP_EVENTS",null,flags);assistantReceiverRegistered=true;}
         assistantObserver=AssistantSync.observe(getApplicationContext());AssistantSync.request(this,false);
-        if (token.isEmpty()) { if(featureDestination==AppNavigation.CODEX&&codexMode==WorkspaceSwitch.WINDOWS)ui.post(() -> {if(foreground&&featureDestination==AppNavigation.CODEX&&codexMode==WorkspaceSwitch.WINDOWS)showSettings();}); } else connect();
+        if (!BridgeEndpoint.configured(base,token)) { if(featureDestination==AppNavigation.CODEX&&codexMode==WorkspaceSwitch.WINDOWS)ui.post(() -> {if(foreground&&featureDestination==AppNavigation.CODEX&&codexMode==WorkspaceSwitch.WINDOWS)showSettings();}); } else connect();
     }
     @Override public void onStop() {
         foreground = false; stopPolling();
@@ -329,7 +329,7 @@ public class MainActivity extends Activity {
         if(destination==WorkspaceSwitch.LABORATORY){selectSection(AppNavigation.LAB,animate);return;}
         codexMode=AppNavigation.mode(destination);codexPages.setDestination(codexMode,animate);codexModeSwitch.setDestination(codexMode,true);
         prefs.edit().putInt("codexMode",codexMode).apply();selectSection(AppNavigation.CODEX,animate);showWorkspaceSwitch();
-        if(foreground&&codexMode==WorkspaceSwitch.WINDOWS&&token.isEmpty())showSettings();
+        if(foreground&&codexMode==WorkspaceSwitch.WINDOWS&&!BridgeEndpoint.configured(base,token))showSettings();
     }
     private void selectSection(int destination,boolean animate){
         destination=AppNavigation.section(destination);boolean changed=featureDestination!=destination;featureDestination=destination;
@@ -369,7 +369,9 @@ public class MainActivity extends Activity {
         taskStatus.setTextColor(running ? GREEN : MUTED);
     }
     private void connect() {
-        stopPolling(); api = new Api(base, token); final Api client = api; final int expected = generation;
+        stopPolling();
+        if(!BridgeEndpoint.configured(base,token)){api=null;setConnection(false,getString(R.string.computer_not_configured));return;}
+        api = new Api(base, token); final Api client = api; final int expected = generation;
         setConnection(false, "正在连接…");
         requests.execute(() -> {
             try {
@@ -462,7 +464,7 @@ public class MainActivity extends Activity {
         gap(body,20);body.addView(text("Pocket Assistant Community 1.0.0\n把想法、事务和陪伴，放在一起。",11,MUTED));menu.show();
     }
     private void showProxyControls() {
-        if (token.isEmpty()) { showSettings(); return; }
+        if (!BridgeEndpoint.configured(base,token)) { showSettings(); return; }
         new ProxySheet().show();
     }
     private void showAssistant(){
@@ -582,24 +584,34 @@ public class MainActivity extends Activity {
         LinearLayout body=dialogBody();body.addView(text(threadId.isEmpty()?"还没有开始对话":title.getText().toString(),16,TEXT));gap(body,20);
         body.addView(text("当前模型",11,MUTED));gap(body,5);body.addView(text(modelLabel,15,TEXT));gap(body,18);
         body.addView(text("电脑工作目录",11,MUTED));gap(body,5);TextView cwd=text(threadId.isEmpty()?prefs.getString("cwd","新建对话时选择"):project.getText().toString(),13,TEXT);cwd.setTextIsSelectable(true);body.addView(cwd);gap(body,18);
-        body.addView(text("连接",11,MUTED));gap(body,5);body.addView(text(base,13,TEXT));gap(body,8);body.addView(text(connected?"电脑在线，任务将在电脑上执行。":"电脑未连接，可在连接设置中重新连接。",12,MUTED));dialog("对话信息",body).show();
+        body.addView(text("连接",11,MUTED));gap(body,5);body.addView(text(base.isEmpty()?getString(R.string.computer_not_configured):base,13,TEXT));gap(body,8);body.addView(text(connected?"电脑在线，任务将在电脑上执行。":"电脑未连接，可在连接设置中重新连接。",12,MUTED));dialog("对话信息",body).show();
     }
     private void showSettings() {
         if (isFinishing()) return;
         LinearLayout body = dialogBody();
         body.addView(text("手机和电脑先登录同一个 Tailscale 网络。\n电脑端运行 start-server.cmd，填写 pairing.txt 中的配对信息。", 13, MUTED)); gap(body, 20);
-        EditText address = field(body, "电脑的 Tailscale 地址", base, false); address.setHint("http://100.x.x.x:8787");
+        EditText address = field(body, "电脑的 Tailscale 地址", base, false); address.setHint(R.string.computer_address_hint);
         EditText secret = field(body, "配对令牌", token, true);
         Button save = button("保存并连接电脑", true); body.addView(save, lp(-1, 48)); gap(body, 12);
         Button reconnect = button("重新连接", false); body.addView(reconnect, lp(-1, 46)); gap(body, 14);
+        android.text.TextWatcher pairingWatcher=new android.text.TextWatcher(){
+            @Override public void beforeTextChanged(CharSequence s,int start,int count,int after){}
+            @Override public void onTextChanged(CharSequence s,int start,int before,int count){
+                String entered=address.getText().toString().trim();
+                if(!entered.contains("://"))entered="http://"+entered;
+                save.setEnabled(BridgeEndpoint.configured(entered,secret.getText().toString()));
+            }
+            @Override public void afterTextChanged(android.text.Editable s){}
+        };
+        address.addTextChangedListener(pairingWatcher);secret.addTextChangedListener(pairingWatcher);
+        pairingWatcher.onTextChanged("",0,0,0);reconnect.setEnabled(BridgeEndpoint.configured(base,token));
         body.addView(text("电脑需保持开机并运行服务。手机切到后台后，已发送的任务会继续。", 11, MUTED));
         ScrollView container = new ScrollView(this); container.addView(body); AlertDialog d = dialog("连接你的电脑", container); d.show();
         save.setOnClickListener(v -> {
             try {
                 String value = address.getText().toString().trim().replaceAll("/+$", "");
+                if(value.isEmpty())throw new Exception(getString(R.string.computer_address_hint));
                 if (!value.contains("://")) value = "http://" + value;
-                URI uri = new URI(value); String host = uri.getHost();
-                boolean tailHost = host != null && (host.matches("100\\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\\.([0-9]{1,3})\\.([0-9]{1,3})") || host.endsWith(".ts.net") || host.equals("127.0.0.1"));
                 value=BridgeEndpoint.normalize(value);
                 String valueToken = secret.getText().toString().trim(); if (valueToken.length() < 32) throw new Exception("请完整粘贴电脑生成的配对令牌（至少 32 个字符）");
                 SecretStore.save(this, valueToken); boolean differentComputer = !base.equals(value);
@@ -608,7 +620,7 @@ public class MainActivity extends Activity {
                 d.dismiss(); connect(); if(laboratorySelected&&laboratory!=null)laboratory.refreshConnection();
             } catch (Exception e) { toast(e.getMessage()); }
         });
-        reconnect.setOnClickListener(v -> { d.dismiss(); if (token.isEmpty()) toast("请先填写配对令牌"); else {connect();if(laboratorySelected&&laboratory!=null)laboratory.refreshConnection();} });
+        reconnect.setOnClickListener(v -> { if(!BridgeEndpoint.configured(base,token)){toast(getString(R.string.computer_not_configured));return;}d.dismiss();connect();if(laboratorySelected&&laboratory!=null)laboratory.refreshConnection(); });
     }
     private void newSession() {
         if (!connected) { showSettings(); return; }
