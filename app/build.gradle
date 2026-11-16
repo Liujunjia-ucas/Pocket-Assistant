@@ -1,0 +1,41 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.codexpocket.app'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'org.pocketassistant.community'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0-community'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes {
+        debug { debuggable true }
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            signingConfig null
+        }
+    }
+    androidResources { noCompress += ['mp4'] }
+    packaging { jniLibs { useLegacyPackaging true } }
+    sourceSets.main.assets.srcDir(layout.buildDirectory.dir('generated/community-assets'))
+}
+
+// Only these public documents enter the APK. No runtime/configuration folders.
+def syncCommunityNotices = tasks.register('syncCommunityNotices', Copy) {
+    from(rootProject.files('LICENSE', 'THIRD-PARTY-NOTICES.md', 'PRIVACY.md', 'SECURITY.md', 'RISK-NOTICE.md'))
+    into(layout.buildDirectory.dir('generated/community-assets/community-notices'))
+}
+tasks.named('preBuild').configure { dependsOn(syncCommunityNotices) }
+
+dependencies {
+    // Community edition does not bundle ASR binaries or model weights.
+    // JVM regression dependencies are supplied separately to tools/test-core.ps1.
+}

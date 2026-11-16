@@ -1,0 +1,68 @@
+{
+  "edition": "Pocket Assistant Community 1.0.0",
+  "date": "2026-11-16",
+  "android": {
+    "applicationId": "org.pocketassistant.community",
+    "version": "1.0.0-community",
+    "releaseBuild": "passed",
+    "lintErrors": 0,
+    "lintWarnings": 18,
+    "warningTypes": {
+      "ApplySharedPref": 2,
+      "ExifInterface": 1,
+      "SetTextI18n": 4,
+      "UnusedAttribute": 1,
+      "ViewConstructor": 10
+    },
+    "debuggable": false,
+    "allowBackup": false,
+    "signed": false,
+    "apkIncludedInSourceArchive": false,
+    "assetGroups": [
+      "renderer",
+      "community-notices"
+    ],
+    "rendererFilesAndLicensesVerified": true,
+    "nativeSpeechLibrariesBundled": false
+  },
+  "node": {
+    "program": "node --test test/*.test.mjs",
+    "passed": 17,
+    "failed": 0,
+    "notes": "Includes actual Windows directory-junction and hardlink boundary checks; file-symlink creation unavailable under OS permissions."
+  },
+  "jvm": {
+    "program": "tools/test-core.ps1",
+    "passedPrograms": 17,
+    "failed": 0,
+    "keystoreAdapter": "JVM-only generated AES key; production FileCipher/FileVault and structured record classes tested."
+  },
+  "dependencies": [
+    {
+      "name": "katex",
+      "version": "0.19.1",
+      "source": "OSV",
+      "advisories": []
+    },
+    {
+      "name": "marked",
+      "version": "15.0.12",
+      "source": "OSV",
+      "advisories": []
+    }
+  ],
+  "secretScanning": {
+    "tool": "Gitleaks v8.30.1",
+    "configuration": "default rules, redaction 100%, no custom allowlist",
+    "initialPublicInventoryFindings": 0,
+    "finalExportMustBeRescanned": true
+  },
+  "notVerified": [
+    "Physical Android device and hardware Keystore",
+    "Live paid model, mail or speech accounts",
+    "All system speech/permission/background implementations",
+    "Independent penetration test",
+    "Comprehensive IP/trademark/legal clearance",
+    "All transitive build-tool advisories"
+  ]
+}

@@ -1,0 +1,34 @@
+<resources>
+    <style name="PocketAccent_sage_light" parent="AppTheme"><item name="android:colorAccent">#00783f</item></style>
+    <style name="PocketAccent_sage_dark" parent="AppThemeDark"><item name="android:colorAccent">#38e58b</item></style>
+    <style name="PocketAccent_ocean_light" parent="AppTheme"><item name="android:colorAccent">#0060ce</item></style>
+    <style name="PocketAccent_ocean_dark" parent="AppThemeDark"><item name="android:colorAccent">#57adff</item></style>
+    <style name="PocketAccent_violet_light" parent="AppTheme"><item name="android:colorAccent">#7537e4</item></style>
+    <style name="PocketAccent_violet_dark" parent="AppThemeDark"><item name="android:colorAccent">#af83ff</item></style>
+    <style name="PocketAccent_rose_light" parent="AppTheme"><item name="android:colorAccent">#be1c5b</item></style>
+    <style name="PocketAccent_rose_dark" parent="AppThemeDark"><item name="android:colorAccent">#ff79b2</item></style>
+    <style name="PocketAccent_amber_light" parent="AppTheme"><item name="android:colorAccent">#ad4800</item></style>
+    <style name="PocketAccent_amber_dark" parent="AppThemeDark"><item name="android:colorAccent">#ffaa42</item></style>
+    <style name="PocketAccent_slate_light" parent="AppTheme"><item name="android:colorAccent">#343f56</item></style>
+    <style name="PocketAccent_slate_dark" parent="AppThemeDark"><item name="android:colorAccent">#b4c3e8</item></style>
+    <style name="PocketAccent_cyan_light" parent="AppTheme"><item name="android:colorAccent">#006d7b</item></style>
+    <style name="PocketAccent_cyan_dark" parent="AppThemeDark"><item name="android:colorAccent">#35dee8</item></style>
+    <style name="PocketAccent_teal_light" parent="AppTheme"><item name="android:colorAccent">#006f60</item></style>
+    <style name="PocketAccent_teal_dark" parent="AppThemeDark"><item name="android:colorAccent">#30dfbf</item></style>
+    <style name="PocketAccent_lime_light" parent="AppTheme"><item name="android:colorAccent">#4e7100</item></style>
+    <style name="PocketAccent_lime_dark" parent="AppThemeDark"><item name="android:colorAccent">#addf39</item></style>
+    <style name="PocketAccent_lemon_light" parent="AppTheme"><item name="android:colorAccent">#846000</item></style>
+    <style name="PocketAccent_lemon_dark" parent="AppThemeDark"><item name="android:colorAccent">#ffdc45</item></style>
+    <style name="PocketAccent_coral_light" parent="AppTheme"><item name="android:colorAccent">#b9321f</item></style>
+    <style name="PocketAccent_coral_dark" parent="AppThemeDark"><item name="android:colorAccent">#ff8970</item></style>
+    <style name="PocketAccent_ruby_light" parent="AppTheme"><item name="android:colorAccent">#b91b36</item></style>
+    <style name="PocketAccent_ruby_dark" parent="AppThemeDark"><item name="android:colorAccent">#ff6980</item></style>
+    <style name="PocketAccent_magenta_light" parent="AppTheme"><item name="android:colorAccent">#a51e9e</item></style>
+    <style name="PocketAccent_magenta_dark" parent="AppThemeDark"><item name="android:colorAccent">#f778ee</item></style>
+    <style name="PocketAccent_indigo_light" parent="AppTheme"><item name="android:colorAccent">#4147ce</item></style>
+    <style name="PocketAccent_indigo_dark" parent="AppThemeDark"><item name="android:colorAccent">#9297ff</item></style>
+    <style name="PocketAccent_sky_light" parent="AppTheme"><item name="android:colorAccent">#0069a8</item></style>
+    <style name="PocketAccent_sky_dark" parent="AppThemeDark"><item name="android:colorAccent">#47c9ff</item></style>
+    <style name="PocketAccent_coffee_light" parent="AppTheme"><item name="android:colorAccent">#87502b</item></style>
+    <style name="PocketAccent_coffee_dark" parent="AppThemeDark"><item name="android:colorAccent">#e8b27d</item></style>
+</resources>

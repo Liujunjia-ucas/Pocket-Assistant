@@ -1,0 +1,946 @@
+{
+  "format": 1,
+  "edition": "Pocket Assistant Community 1.0.0",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 428,
+      "sha256": "1379c47a0e908ba1cf8befe05f9286cc048d8663d50bc0a5dfc376e984975c5e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 244,
+      "sha256": "6ff8f1801a1342564b587679ee4b66162c1d7488d03de633fb87805bcfbd8f17"
+    },
+    {
+      "path": "app/build.gradle",
+      "bytes": 1454,
+      "sha256": "a658c31e826aca5c317b9173f2a0f4f4363f71abebd71dd81caba1ca1a2829bd"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "bytes": 3456,
+      "sha256": "796a1c49f46de1ec4f1395ee7b1fa6565b2cd51d03643616a3e6be485ab41708"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_AMS-Regular.woff2",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Fraktur-Bold.woff2",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Fraktur-Regular.woff2",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Main-Bold.woff2",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Main-BoldItalic.woff2",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Main-Italic.woff2",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Main-Regular.woff2",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Math-BoldItalic.woff2",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Math-Italic.woff2",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_SansSerif-Bold.woff2",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_SansSerif-Italic.woff2",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_SansSerif-Regular.woff2",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Script-Regular.woff2",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Size1-Regular.woff2",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Size2-Regular.woff2",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Size3-Regular.woff2",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Size4-Regular.woff2",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "path": "app/src/main/assets/renderer/fonts/KaTeX_Typewriter-Regular.woff2",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    },
+    {
+      "path": "app/src/main/assets/renderer/index.html",
+      "bytes": 682,
+      "sha256": "4cb3eac29a0f27cd6545b9b720639e42ba58c2f81ed64a33a39e90e31a41243a"
+    },
+    {
+      "path": "app/src/main/assets/renderer/KATEX-LICENSE.txt",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "app/src/main/assets/renderer/katex.min.css",
+      "bytes": 24793,
+      "sha256": "00e0b094171b07f58422075f469b4feac2b2f7bce1aeec943c08da4d697f4dcf"
+    },
+    {
+      "path": "app/src/main/assets/renderer/katex.min.js",
+      "bytes": 273081,
+      "sha256": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc"
+    },
+    {
+      "path": "app/src/main/assets/renderer/MARKED-LICENSE.txt",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    {
+      "path": "app/src/main/assets/renderer/marked.umd.js",
+      "bytes": 73384,
+      "sha256": "d7931d1cd7bf727dd756c871637edcc9e0f8538003b927368400ec1ee47a9dd9"
+    },
+    {
+      "path": "app/src/main/assets/renderer/renderer.css",
+      "bytes": 2815,
+      "sha256": "d141d7c39ebde6dd3331338fdc1c8c39852f435ccdeaaa175c6f04ca8ae14723"
+    },
+    {
+      "path": "app/src/main/assets/renderer/renderer.js",
+      "bytes": 6613,
+      "sha256": "a34d80744d3954cd0ad876d33d7858f35ba4402bbe5434de2cae509a4bebaa77"
+    },
+    {
+      "path": "app/src/main/assets/renderer/vendor-manifest.json",
+      "bytes": 4406,
+      "sha256": "4dc764b8ae81913605e2f67ecb64ec1322fa5b5f3a5b6b1e9e2caea9a41bd7b1"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AndroidChatView.java",
+      "bytes": 68798,
+      "sha256": "46d32fae120d27d26d5f43ca99c0d6bb4926e9f6050a25bf79a098d3a2fe1c2d"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AndroidInputMedia.java",
+      "bytes": 5283,
+      "sha256": "af554e39ac5ad1abd829120704347b4ae1119ffbca27406c8cf2eb1e08c6d8d4"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/Api.java",
+      "bytes": 6001,
+      "sha256": "c8a85dba7b2f22f44eacbc8b1d39338dccaf6890f8140c1c7df127e172b9fa2e"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AppNavigation.java",
+      "bytes": 462,
+      "sha256": "92a557eeaeae2965b3bc910f8661688d1d7d39854712a47872fdb412f2887c96"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantActions.java",
+      "bytes": 4387,
+      "sha256": "08436090c7cb3b27565cf2134cb6d2c77314ec9480e78820281a126d5ba1f763"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantBackgroundService.java",
+      "bytes": 2131,
+      "sha256": "55f6740fb52a00b8da11fa859bade08bd4950361f9d839c7536ef63ba7961828"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantBootReceiver.java",
+      "bytes": 405,
+      "sha256": "f149b1f29956492813d9242f06ec82fc3388e07784633ff5732dab6b371a38dc"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantFastRouter.java",
+      "bytes": 7788,
+      "sha256": "4fb486e845e59b6b2c08cb767727b9c8fe81cae8219d3d5d5ab99603ca5d86d7"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantHub.java",
+      "bytes": 31535,
+      "sha256": "b3def1af70debf586dc62bfce47bb932a8b9106a7c946c83b7d653f2872a64ba"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantInbox.java",
+      "bytes": 3276,
+      "sha256": "adc0f6eb6250a11bb0d3c0da37569c6f2543014da8bfdf0e64c9c1b660db4ff1"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantIntent.java",
+      "bytes": 6093,
+      "sha256": "14723ef6823029012300d6b9d154a382cb880af182c7ce70698ef1bad8f28ecd"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantNotificationListener.java",
+      "bytes": 3221,
+      "sha256": "77f1a0ba1093cbd29601c6ce8e2af7ac23304442964ede7fd6dbb371931a0392"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantNotifications.java",
+      "bytes": 5271,
+      "sha256": "5dd420420e5ce307434229289544e008c282f2194a2aca24cc4bc72cccdfaa0f"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantNotificationSettings.java",
+      "bytes": 3611,
+      "sha256": "e98884f1b8c19f1d27c9a8e06ce0f31d232306585bf59fe3554315ab512f174a"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantNotificationStore.java",
+      "bytes": 892,
+      "sha256": "0bf007f5f67d4aab5f6503132712a9c19597d7864a09890d455b97eabb80f84d"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantRemoteResult.java",
+      "bytes": 2032,
+      "sha256": "3ac0b59639a07909d1ee097bb92c2e0611095459cc2e40ab54c5c4fd156db1b6"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantRouter.java",
+      "bytes": 10026,
+      "sha256": "5e3aa37cdb386d5c59cb26f45bcc0de68cc7ac69a42eaf562cb903ea712fb6ec"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantSources.java",
+      "bytes": 1657,
+      "sha256": "e288dcadf4823f5c8cab45a41dd8b912b5414ed3c96d37c2d6cf32652c20cfe5"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantStore.java",
+      "bytes": 9839,
+      "sha256": "91f4e5048a5cba11ae12acf3e9c21a39b88c46b34f6db4f9e4feedb823afc718"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantSync.java",
+      "bytes": 11095,
+      "sha256": "e0320b695d166e18609cb527ca6cc5e2b30baa2125e5837b6a8ac3848e90a7de"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantSyncJob.java",
+      "bytes": 643,
+      "sha256": "c58f5ae5da03d1290bd83fdf9bbe63b62a3bd5f525d86a4137ed3c174c5a8091"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantTriage.java",
+      "bytes": 9749,
+      "sha256": "cbacf196d31c11521c489828a90f38a1c9352837dc103de50b69b125b9c5628c"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantWork.java",
+      "bytes": 1901,
+      "sha256": "0b113488d96926a39dc544d87e373091067c6319db6b4ec81e1a0d2811bb70ed"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantWorkStore.java",
+      "bytes": 4170,
+      "sha256": "d8a6d4d5c0f19437ee7d46989d56394a81a1bbad87b10ea626e5a1bf5f26c2b0"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/Attachment.java",
+      "bytes": 2275,
+      "sha256": "205629721803aa8e2ea94ac00eff3fab8809047137f7264f319ec09ebfb01f85"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/BottomFeatureBar.java",
+      "bytes": 2091,
+      "sha256": "5fc11a47f85e5da774326083dee5f08bd5fbd98af80c29c94c6425affa482ede"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/BridgeEndpoint.java",
+      "bytes": 1543,
+      "sha256": "3c4a653b3685dcba5bca3916af60c4691af7e7834ed75fac7410c29eed8ee32f"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/CallHistory.java",
+      "bytes": 4531,
+      "sha256": "fb6460dc828be9d4a5ece598ef61e3cde574e451f5ba35f8fa402329dc826d9c"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/ChatWallpaperDrawable.java",
+      "bytes": 764,
+      "sha256": "79b392fa0a20f95b0f9562b312917349e14e102a52f5e046aedab2fff826c96c"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/CommunicationCenter.java",
+      "bytes": 28071,
+      "sha256": "37c3b382378457cfc6a511799a68550d196a8aab585649436cc707a56beedb37"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/CommunicationPrompts.java",
+      "bytes": 1439,
+      "sha256": "6e8ec47dc065be313d2306d04cde69a43080de6b8da58cf3580f6fbe02c61331"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/CommunityApplication.java",
+      "bytes": 494,
+      "sha256": "8b625b935eb679f380470228e85198e7ceaee333a3e5725f6ebabd2b07407c84"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/CompanionProfile.java",
+      "bytes": 2647,
+      "sha256": "511170c2d55f38a42308a09ee8945f7faedf162edc501f2b006d6f22be8e1eee"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/DirectApi.java",
+      "bytes": 13129,
+      "sha256": "f9bbf50e6ef4ddfd1449d554ef7201145517bb2dd7bc399b316e75a263bbb596"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/DirectChats.java",
+      "bytes": 5482,
+      "sha256": "36196dfbc9717efe23cb35e3a6c8b7837ef84d48fc0d5a6107779abbeef08968"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/DirectEndpoint.java",
+      "bytes": 1310,
+      "sha256": "775009a0b7126ebed8d76caf770522b68282b3480e8c88b9147eb089d1c3bbd1"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/DirectInputs.java",
+      "bytes": 9022,
+      "sha256": "25bcfd4fe849b9d803ad7e6934da092070690345c6e8077d06c29e29058a0e38"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/DirectWeb.java",
+      "bytes": 8520,
+      "sha256": "615ff428850a1b7cf1bd84898cd4f5fc059fc52166e295cda855581d9cf843df"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/DocumentText.java",
+      "bytes": 10864,
+      "sha256": "89483a6e2cd7570a30120f07464a7198ff53a3bf60689e46179d4564b953dbc4"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/FileCipher.java",
+      "bytes": 1692,
+      "sha256": "418c925fb0de0dcb5172fe34f122f90d931380226273b7e615328c25c24db126"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/FileVault.java",
+      "bytes": 1577,
+      "sha256": "c4a0fe5bccdb51d537684ff102e11b2c86576dc2a135bca82d8650cd9afb390e"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/IconView.java",
+      "bytes": 5952,
+      "sha256": "db0a86cf5dfe554f00d1b26ab2eed0ed40cebc5f43249474d5beaee51c527f34"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/ImapMailbox.java",
+      "bytes": 7754,
+      "sha256": "c3425218ba81824551c67fe2d6c35f18143eeddac83315272f6fad8e5a1c2513"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LaboratoryView.java",
+      "bytes": 47790,
+      "sha256": "34905c768194c4abb9c8cdc58627d0c1721cb13873f180d550580ed7128c4207"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LocalArtifacts.java",
+      "bytes": 3605,
+      "sha256": "e84b64f9823edfa94887514bfae564393e8bb1221b6dc4228aca5eb370617879"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LocalCompanion.java",
+      "bytes": 14099,
+      "sha256": "d282f0b91010c9eb5b84e0612b26c57b692a7c38fbf880d43596f047ba076acf"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LocalDocuments.java",
+      "bytes": 12565,
+      "sha256": "009e67e4dcf7dd5a9fec3ae1194638714baaf07db186d58afce389197cf2f664"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LocalFileSave.java",
+      "bytes": 3848,
+      "sha256": "4796ac9534dc897a26b9e80142dbff40a71a2d9838dfe4ba62e7dbb0317631cc"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LocalFileSpec.java",
+      "bytes": 5092,
+      "sha256": "81c064fa1de8db03a945eccd753bf11105bb84fcd0c747c65294bbbcb6054823"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/LocalPdf.java",
+      "bytes": 2761,
+      "sha256": "0a265f9623c43787e85628ccc770fb64b665bbce742979feb44e44487f5a8211"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/MailAccounts.java",
+      "bytes": 2903,
+      "sha256": "45514544beaaa7fa0889a5f9e9672c6ec143148fc2fa9005ed9c9f693e7f4526"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/MailMime.java",
+      "bytes": 5093,
+      "sha256": "89be549eefe5dbe65d623acc9d8a0e0a552b3388db5f68e4bbc5f13976dec068"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/MainActivity.java",
+      "bytes": 92886,
+      "sha256": "d72767efe2d947255e1979052a889a10e06d675ee3646ca3eae4a388796c90d5"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/MathReplyView.java",
+      "bytes": 8025,
+      "sha256": "609cee894e65b5d52bd4cd3ed2527923c220ad27542fdf244cf334a23a2a3441"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/MathSyntax.java",
+      "bytes": 448,
+      "sha256": "ff41ac240c6c552baf37b91d8019e8e13fb611043bc41c47b00a87bc573d4fea"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/NativeSpeechFrames.java",
+      "bytes": 2945,
+      "sha256": "0e27139ea5fcce0551febf1ce970967ac83ca9be78768f19a71da41e029de239"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/NotificationLedger.java",
+      "bytes": 849,
+      "sha256": "784cb3207e031794fc10602d0f8071973726b797bc836089fc05858831d3f4df"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/OfflineRecognition.java",
+      "bytes": 482,
+      "sha256": "76ccc5a98bcd2b0c90675aeba4d8f8aaa3bb9d15edba2549aa6fe117d3ebe572"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/PhoneApiConfig.java",
+      "bytes": 2102,
+      "sha256": "b039c3f97a7121dfe3fad4318b53d78b9724c50362eba85022aa727b3d076cd7"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/PhoneRecognition.java",
+      "bytes": 12353,
+      "sha256": "a4ce0117327d35cdfcb0506d42dc07ffb310fa46f3ba56444a648787fec2ad11"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/PocketUi.java",
+      "bytes": 4448,
+      "sha256": "563b7a8d101643df867440024ff7e6dcfd24277acb9f2ccdd58017c208d81f85"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/PrivacySettings.java",
+      "bytes": 6683,
+      "sha256": "c4f84a9731f6e545b9d09cb202071ef287043e7b7ab33b99ee6ed81497a0f0e2"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/ProviderCatalog.java",
+      "bytes": 5413,
+      "sha256": "4a25e412620b6055858a9dc0c6587313c8402371d44f084036979aabe720eaed"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RecognitionSettings.java",
+      "bytes": 2837,
+      "sha256": "8c59bf0e79d74bf152627c148a4d02ce38285b5a7a62f8f2192f3c41b067fd9e"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RemoteFiles.java",
+      "bytes": 15888,
+      "sha256": "6eebca0598ca4380a8d268daf1bb8c9fcb5fce275dec283bd36d30abd3835ec9"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RoomFraming.java",
+      "bytes": 683,
+      "sha256": "5ab6134b4e0b1fcbe5927952de2f6bd437369f2994cc3439babb7331c43ca860"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RoomMotion.java",
+      "bytes": 6272,
+      "sha256": "351db6c6de27915cd916f62023375193d952c623880ecb8f3a60b7f224cdac8f"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RoomPlayback.java",
+      "bytes": 444,
+      "sha256": "fc8b6e3f5068193b1bf06cebc57d917d26286d5061cdaa037e54b37245e20cfc"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RoomSpeech.java",
+      "bytes": 1557,
+      "sha256": "5bf5207a59dd05180e9796cb512bcad4732c347de16322749c0955dd638fb000"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/RoundedDialogBuilder.java",
+      "bytes": 3485,
+      "sha256": "13b1e067ffba3ea9e924dcaa2f5dcf9fa825a6fcfc736549336b226711f79a94"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SecretStore.java",
+      "bytes": 3007,
+      "sha256": "48bbb80f700dcc10910bf2a47495e939cda6db5dba64d7609a809b5669a01df8"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SharedCompanionMemory.java",
+      "bytes": 4182,
+      "sha256": "c6abe5e33315900b20810117713abcbda87e53d781f6c5879adc1d9309a1a348"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SmartRepository.java",
+      "bytes": 4207,
+      "sha256": "db2bac2a51f7fb2db381aa430e28f5afb1dfd502494aa6229d4e746c368e6cab"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SmartState.java",
+      "bytes": 5352,
+      "sha256": "6a43ecbcb1ebd97e89eadc3f67098b90e7642ecc19b2f8e00307af8bb384e309"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SpeechEnvelope.java",
+      "bytes": 4067,
+      "sha256": "9614e7910a1bf026f76def7f4b51c59772f2e807193ed608f63bcba68e5973d8"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SpeechRetry.java",
+      "bytes": 627,
+      "sha256": "5698136dc909f157dbc8f47c8358a67680814af3981727873dd16ac3ae3c256e"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SpeechText.java",
+      "bytes": 1384,
+      "sha256": "180c5421f9e0623a679e7077bb5db59146300845c299bb4f3f03b74628118ef2"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/SystemAssistantActions.java",
+      "bytes": 4447,
+      "sha256": "4b795e39d9bcca08107c6c54deb7953aabb32efbc3059619a62b3c1f555aa294"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/TaskDescription.java",
+      "bytes": 6126,
+      "sha256": "5230a60f1024cce4900554d0ee49774d43d8622336973578a1db14b4b3a687de"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/ThemePalette.java",
+      "bytes": 4702,
+      "sha256": "316d53caf8c8686f28fd739287a87db9c8e4f9d616af7fad6a0e674d6823326e"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/VolcSpeech.java",
+      "bytes": 6894,
+      "sha256": "c2c27018cb72746158790a0910237d1b184b3500ac8b93f6b4f948ac087a7d43"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/VolcVoiceSettings.java",
+      "bytes": 9164,
+      "sha256": "e4d0164f3dbebca5de33493adbf84bef00c0af4b140e0fe55e59528f461586c8"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/WhaleView.java",
+      "bytes": 1886,
+      "sha256": "b659600a501a83a3745ca680a431ab603f120ec974d0e540a66cf7e85f1f59a6"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/WorkspaceBar.java",
+      "bytes": 2501,
+      "sha256": "9146d30a102950782f8013bec62e3b2e030d7bbfa067101802208a5cc5fb4ccb"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/WorkspacePager.java",
+      "bytes": 8003,
+      "sha256": "77390ee88698b198f4a7481d7eec5a8457f544d9ea71cd04204a36b8fac3debc"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/WorkspaceSwipe.java",
+      "bytes": 2278,
+      "sha256": "b400111edb9e258a994eb8f60437a5192831c23f60474312b56fde49d74b8fa4"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/WorkspaceSwitch.java",
+      "bytes": 6424,
+      "sha256": "eac45aea583ba865a34cb9cc6976a68f30dd2a874cdaa48e7fa839bbfd307be9"
+    },
+    {
+      "path": "app/src/main/java/com/codexpocket/app/ZoomImageView.java",
+      "bytes": 2839,
+      "sha256": "2a189ad098459553a85f7045da7be04f845d414284b8a6e34e547c37a37b9782"
+    },
+    {
+      "path": "app/src/main/res/anim/pocket_sheet_enter.xml",
+      "bytes": 300,
+      "sha256": "6e651824ffe5440369b25f694304d64ba2f803215d5870c7ba39c160c40379dd"
+    },
+    {
+      "path": "app/src/main/res/anim/pocket_sheet_exit.xml",
+      "bytes": 302,
+      "sha256": "71bf633712467c333ed0f148223e8f9986954d01e7455ef64cc13e0d86dacc1d"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher.xml",
+      "bytes": 692,
+      "sha256": "d80ff5fa42a5f564b6a395ca992225d0a114cfab91000d3b498a6997b32796be"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_notification.xml",
+      "bytes": 440,
+      "sha256": "16872c4c391783d69498dd2c1be89fb4c14c524ed79de18c84148da0f306458f"
+    },
+    {
+      "path": "app/src/main/res/drawable/rounded_input_dark.xml",
+      "bytes": 178,
+      "sha256": "f0f7a5caf4b72e7e6ec198da459f51e5ef6c05327e50abc5cc56435cc19b830a"
+    },
+    {
+      "path": "app/src/main/res/drawable/rounded_input_light.xml",
+      "bytes": 178,
+      "sha256": "5ff278a9d0672dd85cdca1a7606273f647a99e9e2fa48bc5f5e6196b3cc93e40"
+    },
+    {
+      "path": "app/src/main/res/values/personalization.xml",
+      "bytes": 3845,
+      "sha256": "a8191f7fe78d4e04d2b97642528e77ae3257d57422f802b1b2aa8f909db3a079"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "bytes": 1835,
+      "sha256": "4662e88f12c88e5e5ad58747383b9a82601ac47d66521ad6f8529b3f58a7302e"
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "bytes": 2668,
+      "sha256": "1dcc699ad8ae53b9cca26ac68b6fb986efdab5324882fe63c40614711c11b19e"
+    },
+    {
+      "path": "app/src/main/res/values-v27/styles.xml",
+      "bytes": 2803,
+      "sha256": "18e2256f79e8507ef19d9a0cf2dd82aec6e236be45991feff08872fc15a05d77"
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "bytes": 264,
+      "sha256": "a2599b33a794212506612410c750fe979f44ee0a7e86d2b482023f176e7b95ff"
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "bytes": 552,
+      "sha256": "45b41b87ca4d97fd007c4832178c92d94ef9392587ca586776276df556be7192"
+    },
+    {
+      "path": "build-android.ps1",
+      "bytes": 665,
+      "sha256": "a251661dd74b6861390d58139a48a2e40905d679490b3a12886f8f7a3862640e"
+    },
+    {
+      "path": "build.gradle",
+      "bytes": 73,
+      "sha256": "ca5837997ada3e12a7069c1f7fc5ce6e2f280704fe8ee92b6483dee4e1c21af2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1028,
+      "sha256": "a031207480b3d427d1d49d760797ec71b8d1922b46814570c3c92a419f8c01ec"
+    },
+    {
+      "path": "docs/models.example.json",
+      "bytes": 219,
+      "sha256": "c7db1fd3a1e06ca261723457b1a1f2bf9347d7ebec69eacd5730752449ce6e3b"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 3377,
+      "sha256": "deb05c6b7b228d75a39c12d09c6fe6e4a7be70e6e9fe9cce9083d73eba3823b4"
+    },
+    {
+      "path": "docs/verification.json",
+      "bytes": 2000,
+      "sha256": "3b4eebb2485e2049c5faefb0bf15c4d8aa8044dca8b448f16c040116d903d857"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 4390,
+      "sha256": "758832a304465283666e72db9163a91231828107df0e44bff69bd3e29379d411"
+    },
+    {
+      "path": "gradle.properties",
+      "bytes": 134,
+      "sha256": "df1cb0f95ac0fc25c680674cd2c2000c350cc8316beb128231eef0059569097c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1086,
+      "sha256": "0538a9c293a5ae0fc89ae593837cb8725664366974981e8dbfb3ca78eaff24d8"
+    },
+    {
+      "path": "package.json",
+      "bytes": 318,
+      "sha256": "1c4e4f62ea7f2891e43acc4909b9167956a263949737da420332d8a244ac02a1"
+    },
+    {
+      "path": "PRIVACY.md",
+      "bytes": 4908,
+      "sha256": "7b081788b90c002128363013ac2a96b05d17abf540ae62f615d49e625a71b9dc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8047,
+      "sha256": "09ba2c7c886fb5c32a13244cd138265b9d701712086b22228c8d407c445191eb"
+    },
+    {
+      "path": "RISK-NOTICE.md",
+      "bytes": 2947,
+      "sha256": "23b22c511f20ff67e7b06e830e9099e265a7a4639614216d5777022b6243f13d"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 5045,
+      "sha256": "e4a8480ab735762bcb10121e7c8e1914aaed921802e9e7b3bd526786ae99a240"
+    },
+    {
+      "path": "server/artifacts.mjs",
+      "bytes": 10124,
+      "sha256": "831e2187dbcc2dc4674505f77a6bc018a2be9c7a3fa6c532b3a1a9118ccd8483"
+    },
+    {
+      "path": "server/clash-proxy.mjs",
+      "bytes": 2697,
+      "sha256": "b3598ad53ec17842eca2fe4ff01f0e23158d92322f77471dadc6cec132f330c8"
+    },
+    {
+      "path": "server/codex.mjs",
+      "bytes": 4684,
+      "sha256": "abcae6ac1793b6376a3cdae93536078e233868bcb696bcaca9fc2b2dd48327fe"
+    },
+    {
+      "path": "server/main.mjs",
+      "bytes": 19999,
+      "sha256": "eb5d216bc9a2b6d8e09b173514aea1430edf7ff7993af5d770eca77a70a82340"
+    },
+    {
+      "path": "server/models.mjs",
+      "bytes": 3026,
+      "sha256": "1b3792040a86202188be1f1018498028f18f07a142100aee2b1c2eca5dc50ab8"
+    },
+    {
+      "path": "server/state.mjs",
+      "bytes": 5149,
+      "sha256": "f238e12540c394df10844ecf8a95cf43ca7d61b53193f9e5b5b9bc1b6bdd13e9"
+    },
+    {
+      "path": "server/uploads.mjs",
+      "bytes": 3886,
+      "sha256": "f6708579c26e3fa4d501d1be7672ead8a5b311f30f8c055b2b68d6db43a664c5"
+    },
+    {
+      "path": "settings.gradle",
+      "bytes": 305,
+      "sha256": "076a6ab02c8fe870981f0ec7cb379396934aa0b29b6b108e1c230715fc938989"
+    },
+    {
+      "path": "start-server.cmd",
+      "bytes": 63,
+      "sha256": "b3741151521fb9d0e773a3e25310c2da89685cc9b88e87365b505081d47a26e1"
+    },
+    {
+      "path": "test/artifacts.test.mjs",
+      "bytes": 6774,
+      "sha256": "0777a785e215a7261ea520b4800838d6cce04c39decf60b32f8f8ad952617e6c"
+    },
+    {
+      "path": "test/clash-proxy-windows-fixture.ps1",
+      "bytes": 3938,
+      "sha256": "66a1016908f24ab60b23a68bc796a40c7e944e17e9eb510ada35155bcd29b4c5"
+    },
+    {
+      "path": "test/clash-proxy.test.mjs",
+      "bytes": 5697,
+      "sha256": "1d3e5b69cfed380ed82255fdc36ffea0084ee9bb8dc36eeec93a6807623a08b6"
+    },
+    {
+      "path": "test/fake-codex.mjs",
+      "bytes": 5467,
+      "sha256": "df0ffc7a67fef7d168de6b1338ff2c5e260cfb1090416a3bcd34ffe12b5661cb"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/AssistantEarlyRouteTest.java",
+      "bytes": 2569,
+      "sha256": "d6cd925743f5fed6b6052fb07ef8a932a17ea338ae0d543c5426209d26bd8f9a"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/AssistantFastRouterTest.java",
+      "bytes": 4539,
+      "sha256": "38835537ea7dd208372c8085157d9effa2fea38a4cdb7441cf91bfde724a12fe"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/AssistantIntentTest.java",
+      "bytes": 4976,
+      "sha256": "e4c9633bac29883d20be10315f002d2e8f76d44517ada1c2e3ff370f2cc8038a"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/AssistantRouterTest.java",
+      "bytes": 4566,
+      "sha256": "55a6224ee114968e095d9dd7c58eb8699608ae0e4becb50548b1679e3b840992"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/BridgeEndpointTest.java",
+      "bytes": 876,
+      "sha256": "cb9aeb7b0df7eb0521c43e6e7009b7aa3e0351373e5e09e33e68bf341abbed90"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/DirectApiTest.java",
+      "bytes": 12925,
+      "sha256": "d0bef77e5a85774b2460d5052947e519205c2d11a40fb8ed23aac4ed6c6653e0"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/DirectInputsTest.java",
+      "bytes": 13409,
+      "sha256": "47f91d5c309abba76456fcaeec472ba4294531036fc93c08d1b50048b22c2c1c"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/DirectWebTest.java",
+      "bytes": 11888,
+      "sha256": "93d7daa8856bcb5657115f274923c4f6dadb6c6555efa67aa683d6df994857e7"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/FileCipherTest.java",
+      "bytes": 1571,
+      "sha256": "59660fd40f2fbf38a93969cdbee2bf81685ff697213cb87f6172ce5c9a36812f"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/LocalFilesTest.java",
+      "bytes": 7310,
+      "sha256": "45aeefa47b95467b5db29476ce847966cf8996bb16a362a154c55fd36f3f830f"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/MathSyntaxTest.java",
+      "bytes": 782,
+      "sha256": "c6ba1400823a9b04eaf09f8dc59b7345bc346d4c3aeef6ef69fd4f28915e1ffc"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/PrivateRecordsTest.java",
+      "bytes": 2982,
+      "sha256": "39d3ea50b1362db8c3fcbce0eef2f81c79fecc47f32806cb9b9883fff6137aff"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/ProviderCatalogTest.java",
+      "bytes": 2677,
+      "sha256": "0474eaad8bd152dffcd9644e03f4b92b0fcc108e46525abd89e013647a3bcbdb"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/SpeechRetryTest.java",
+      "bytes": 1179,
+      "sha256": "5dbe4916748b9f82d82d4fbc779dd6d7696cd98e852769d895a84d889cf0ae50"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/SpeechTextTest.java",
+      "bytes": 1680,
+      "sha256": "441da1fcd720c8c017ff1a39cd9253475786c791f81846a8a60960d3feb3aee4"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/TaskDescriptionTest.java",
+      "bytes": 5983,
+      "sha256": "98ff5e88f2269684afa0c7c82214ec560f58e660ed2aab242945585131c734ed"
+    },
+    {
+      "path": "test/java/com/codexpocket/app/VolcSpeechTest.java",
+      "bytes": 4615,
+      "sha256": "102d882b82494815178b12682a611cfee143e6fb9fba122d523d0f3ee31b7253"
+    },
+    {
+      "path": "test/math-renderer.test.mjs",
+      "bytes": 4325,
+      "sha256": "8fbbe46336276e10a3127375de0f5ac209939d16cd545711967f216f8f505361"
+    },
+    {
+      "path": "test/server.test.mjs",
+      "bytes": 12742,
+      "sha256": "4b6c276bfca62a98717cfa541b2ae53ff9437cd5162b722b07c5560e673721d5"
+    },
+    {
+      "path": "test/support/com/codexpocket/app/CoreTestRunner.java",
+      "bytes": 628,
+      "sha256": "4e676dcb298fa0a2961ec28d5b51e51997f81e02bc573094602a425cf96294a1"
+    },
+    {
+      "path": "test/support/com/codexpocket/app/SecretStore.java",
+      "bytes": 457,
+      "sha256": "f58f0969da2974d0dc6b42b1a22e4c4ee837e7d754773d3cd3e989f32a01446c"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 2379,
+      "sha256": "973e030e7ec6be4c56fdbda2a1d8b09c4e3f1ca01b84e9c5d731ece857093f5a"
+    },
+    {
+      "path": "tools/audit-publication.py",
+      "bytes": 7142,
+      "sha256": "30d1c8000854357c063b1220d5802b6bc455740f2c25eb994822050dd5b57504"
+    },
+    {
+      "path": "tools/clash-proxy.ps1",
+      "bytes": 4998,
+      "sha256": "2e6adea7e83ef15b0eb015b902b263e653a64e6a06c2e450c45084fa853046eb"
+    },
+    {
+      "path": "tools/ClashNativeControl.cs",
+      "bytes": 2556,
+      "sha256": "d0aeef21e8d8dd6dfec52d14eb12b99cde5c68ec16c9b788be535ca146cbca8b"
+    },
+    {
+      "path": "tools/package-source.py",
+      "bytes": 2479,
+      "sha256": "f73a27a0f862772017a56fcefe576011a8e5bd696a1e6726c17c493d647e1b58"
+    },
+    {
+      "path": "tools/setup-clash-native-control.ps1",
+      "bytes": 2938,
+      "sha256": "3bd8389283360b077d330fd3468667e4603752c7728beb12b5073515ac63c067"
+    },
+    {
+      "path": "tools/test-core.ps1",
+      "bytes": 1669,
+      "sha256": "39dc2dd3e0677198ed9c0615d0212b25afad4eaf0c437be6a04e9e85dc38e4cd"
+    }
+  ]
+}

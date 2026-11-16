@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original geometric notebook icon, MIT, Pocket Assistant contributors. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+<path android:fillColor="#4969EE" android:pathData="M10,3 L38,3 Q45,3 45,10 L45,38 Q45,45 38,45 L10,45 Q3,45 3,38 L3,10 Q3,3 10,3 Z"/>
+<path android:fillColor="#FFFFFF" android:pathData="M14,12 L32,12 Q35,12 35,15 L35,33 Q35,36 32,36 L14,36 Z"/>
+<path android:fillColor="#4969EE" android:pathData="M18,18 L30,18 L30,20 L18,20 Z M18,24 L30,24 L30,26 L18,26 Z M18,30 L26,30 L26,32 L18,32 Z"/>
+</vector>

@@ -1,0 +1,48 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#354E40</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">#F6F5F0</item>
+        <item name="android:navigationBarColor">#F6F5F0</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#F6F5F0</item>
+        <item name="android:editTextStyle">@style/PocketEditText</item>
+        <item name="android:spinnerStyle">@style/PocketSpinner</item>
+    </style>
+    <style name="AppThemeDark" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#C3DDC9</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">#151917</item>
+        <item name="android:navigationBarColor">#151917</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#151917</item>
+        <item name="android:editTextStyle">@style/PocketEditTextDark</item>
+        <item name="android:spinnerStyle">@style/PocketSpinnerDark</item>
+    </style>
+    <style name="PocketEditText" parent="android:style/Widget.Material.Light.EditText">
+        <item name="android:background">@drawable/rounded_input_light</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="PocketEditTextDark" parent="android:style/Widget.Material.EditText">
+        <item name="android:background">@drawable/rounded_input_dark</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="PocketSpinner" parent="android:style/Widget.Material.Light.Spinner">
+        <item name="android:background">@drawable/rounded_input_light</item>
+        <item name="android:popupBackground">@drawable/rounded_input_light</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="PocketSpinnerDark" parent="android:style/Widget.Material.Spinner">
+        <item name="android:background">@drawable/rounded_input_dark</item>
+        <item name="android:popupBackground">@drawable/rounded_input_dark</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="PocketSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/pocket_sheet_enter</item>
+        <item name="android:windowExitAnimation">@anim/pocket_sheet_exit</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "replace-with-your-model-id",
+    "label": "My configured Codex model",
+    "shortName": "My model",
+    "provider": "replace_with_your_provider",
+    "file": "config.toml",
+    "color": "#4969EE"
+  }
+]

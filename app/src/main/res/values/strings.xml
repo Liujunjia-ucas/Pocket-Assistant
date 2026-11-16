@@ -1,0 +1,23 @@
+<resources>
+    <string name="web_key_required">请填写 DeepSeek Key，或先保存 DeepSeek 对话的密钥。</string>
+    <string name="web_key_cleared">专用密钥已清除；如已配置官方 DeepSeek 对话密钥，将复用该密钥。</string>
+    <string name="model_selector_label">%1$s  ⌄</string>
+    <string name="phone_model_selector_label">%1$s ⌄</string>
+    <string name="file_request_word">请生成一个 Word（.docx）文件，内容要求：%1$s</string>
+    <string name="file_request_excel">请生成一个 Excel（.xlsx）文件，内容要求：%1$s</string>
+    <string name="file_request_pdf">请生成一个 PDF 文件，内容要求：%1$s</string>
+    <string name="file_request_other">请生成文件并提供保存卡片，格式和内容要求：%1$s</string>
+    <string name="models_fetch_error">%1$s 可选常用模型或手动填写控制台中的模型 ID。</string>
+    <string name="model_id_required">请从模型列表选择，或填写准确的模型 ID。</string>
+    <string name="api_key_required">请先填写 API Key。</string>
+    <string name="api_save_failed">保存失败，请检查 API 地址、密钥及手机存储。</string>
+    <string name="assistant_clarified_input">%1$s\n补充说明：%2$s</string>
+    <string name="auto_sync_management">自动同步与管理</string>
+    <string name="allow_cloud_communication">允许云端 AI 读取通讯内容</string>
+    <string name="proxy_status_detail">Clash Verge 开关：%1$s\nWindows 系统代理：%2$s%3$s</string>
+    <string name="proxy_status_port">\n%1$s</string>
+    <string name="proxy_enabled">开启</string>
+    <string name="proxy_disabled">关闭</string>
+    <string name="workspace_directory">⌁  %1$s%2$s</string>
+    <string name="workspace_read_only">\u0020 ·  只读</string>
+</resources>
