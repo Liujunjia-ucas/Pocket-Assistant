@@ -20,7 +20,7 @@
     {
       "path": "app/build.gradle",
       "bytes": 1457,
-      "sha256": "8da2f9300f9e445f6c1d1d7af597b60342a0fd31d8b15e76a95885326b0712fe"
+      "sha256": "0f23723868ff58ec1c9047bd89d8eb4452388d320c00cff648fe5ae6f6f3d3db"
     },
     {
       "path": "app/src/main/AndroidManifest.xml",
@@ -208,14 +208,19 @@
       "sha256": "f149b1f29956492813d9242f06ec82fc3388e07784633ff5732dab6b371a38dc"
     },
     {
+      "path": "app/src/main/java/com/codexpocket/app/AssistantDashboard.java",
+      "bytes": 7717,
+      "sha256": "5e83b60910ebcaafe73f629ceed93ad821e22a03923e9c31fb783bed8ede9441"
+    },
+    {
       "path": "app/src/main/java/com/codexpocket/app/AssistantFastRouter.java",
       "bytes": 7788,
       "sha256": "4fb486e845e59b6b2c08cb767727b9c8fe81cae8219d3d5d5ab99603ca5d86d7"
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/AssistantHub.java",
-      "bytes": 31535,
-      "sha256": "b3def1af70debf586dc62bfce47bb932a8b9106a7c946c83b7d653f2872a64ba"
+      "bytes": 30599,
+      "sha256": "556366e6cc47049e6300df89ba35540e78039c63e2d58e1e99e25886a24316bb"
     },
     {
       "path": "app/src/main/java/com/codexpocket/app/AssistantInbox.java",
@@ -700,12 +705,12 @@
     {
       "path": "docs/verification.json",
       "bytes": 2003,
-      "sha256": "63071d1cab8efecad23acf8bf4358a5649ded8c4601d3b5185ddf1fdc74027d9"
+      "sha256": "f293fc86f975441832815636ad667c6aec3ec565fe65464f953c69e8f78a7233"
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 5073,
-      "sha256": "0fc820f3d21e24ac1535f503eab8204b2b0cf7063065e12199c2b855becda9da"
+      "bytes": 5740,
+      "sha256": "e0c82dc7dddd9b767f2e3b102ca2cb98d627d290ae92e13e3d7df5848ad06ff0"
     },
     {
       "path": "gradle.properties",
@@ -729,8 +734,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8366,
-      "sha256": "315ce0a11d20a66e4e34b11be582d2065627efac6457eead042d6ddcef06eb0a"
+      "bytes": 8670,
+      "sha256": "c1682fcb1bcaca870839af04e6b46e7d22dd67ab0bb1c38a7f60c75fa6d5d00e"
     },
     {
       "path": "RISK-NOTICE.md",

@@ -1,12 +1,16 @@
 # 验证记录
 
-验证日期：2026-11-16。对象：Pocket Assistant Community 1.0.0 r3（Android 版本 `1.0.0-community-r3`，versionCode 2）；应用 ID 为 `org.pocketassistant.community`。机器可读摘要见 [verification.json](verification.json)。
+验证日期：2026-11-16。对象：Pocket Assistant Community 1.0.0 r4（Android 版本 `1.0.0-community-r4`，versionCode 3）；应用 ID 为 `org.pocketassistant.community`。机器可读摘要见 [verification.json](verification.json)。
 
 ## 构建与回归
 
 r3 将手机首次配对地址默认值改为空白，保存按钮随地址与令牌格式更新；启动、手动重连、代理控制、文件恢复和后台任务检查有效配对后才构造电脑客户端。手动保存过的地址（包括明确填写的本地调试地址）继续保留。本轮补充了空地址、缺少令牌、无效地址与明确保存地址的回归检查；没有在本次运行手机安装/界面自动化测试。
 
-Node 桥接代码及其测试未在 r3 修改，下表 Node 结果来自上一轮同一代码的验证；Android 构建/Lint 和 17 组 JVM 程序针对 r3 重新运行。
+r4 将 AI 助理首页移植为与自用版相同的五个圆角卡片分区：重要信息、待办、随手记、工作进度、常用功能。保留社区版加密存储、云端私人上下文独立同意、同步默认关闭、空电脑地址与配对校验。刷新只触发已经启用的同步，未启用时提示用户进入来源设置，不自动授予权限或启用同步。
+
+共用视觉布局近似预览已检查 320/360/432 宽度、深浅色、有数据/空状态、常规/1.3 倍文字共 24 个组合；预览使用虚构内容，不能替代原生 Android 运行或手机实测。移植没有引入第三方图像、音色或个人配置。
+
+Node 桥接代码及其测试未在 r3/r4 修改，下表 Node 结果来自上一轮同一代码的验证；Android 构建/Lint 和 17 组 JVM 程序针对 r4 重新运行。
 
 | 检查 | 结果与范围 |
 |---|---|
